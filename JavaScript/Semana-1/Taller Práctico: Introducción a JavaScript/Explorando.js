@@ -156,4 +156,3 @@ const age = prompt("Digita tu edad");
 const city = prompt("De que ciudad eres");
 
 console.log(`Hola ${names}, tienes ${age} años y vives en ${city}.`);
-
