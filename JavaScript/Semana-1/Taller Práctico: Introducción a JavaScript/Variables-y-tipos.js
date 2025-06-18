@@ -92,7 +92,7 @@ console.log(NOT);
 
 // 5.1
 
-let numero = prompt("Ingresa un número a comparar: ")
+let numero = prompt("Ingresa un número a comparar");
 
 if(numero < 10){
     console.log("El número " + numero + " es menor a 10")
@@ -103,4 +103,57 @@ if(numero < 10){
 }
 
 // 5.2
+
+let user_name = prompt("Ingresa tú nombre de usuario");
+
+if(user_name == "Admin"){
+    console.log("🎉 ¡Bienvenido, Admin! 🎉");
+}else{
+    console.log(`Hola, ${user_name}`);
+}
+
+// 5.3
+
+let number = prompt("Ingresa un numero");
+let parimpar = number%2 == 0? "Es par": "Es impar";
+console.log(parimpar);
+
+/** Parte 6: Consola del Navegador */
+
+// 6.1
+
+console.info("Esta es una prubea");
+console.warn("Ten cuidado con lo que estas haciendo");
+console.error("Se ha causado un error");
+console.group("Inicio de un mensaje en grupo");
+console.log("Esto es una prueba");
+console.log("de un grupo");
+console.log("de mensajes");
+console.groupEnd();
+console.time("Tiempo");
+let num = 10;
+let num2 = 2;
+
+let sum = num + num2;
+console.timeEnd("Tiempo");
+
+
+/** Parte 7:  Comentarios */
+
+//7.1
+
+/**Esto es una variable contante que 
+contiene una cadena de texto */
+const mensaje = "Hola"
+let mensaje2 = 13 //Esto es una variable let que contiene un entero
+
+/**Parte 8: Desafio final */
+
+//8.1
+
+const names = prompt("Digita tu nombre");
+const age = prompt("Digita tu edad");
+const city = prompt("De que ciudad eres");
+
+console.log(`Hola ${names}, tienes ${age} años y vives en ${city}.`);
 
