@@ -1,3 +1,4 @@
+const { createElement } = require("react");
 
 let colorArray = ['Green','Yellow','Blue','Red','Black','White'];
 let container = document.getElementById('container');
@@ -65,3 +66,33 @@ const cancionHTML = `
     Duracion: ${cancion.duracion}</p>
 `;
 canciones.insertAdjacentHTML("beforeend", cancionHTML);
+
+//Punto 3
+
+const producto = {
+    Nombre:`Camisa` ,
+    Precio:`150.000`,
+    Stock: 50,
+    Colores: `Green, Blue, Black, White`
+};
+const productos = document.getElementById('producto');
+let claves_valores = Object.entries(producto)
+productos.innerHTML = `<ul>`;
+productos.innerHTML = `<h2>Productos</h2>`
+claves_valores.forEach(([clave, valor]) => {
+    productos.innerHTML += `<li><strong>${clave}</strong>: ${valor}</li>`
+});
+productos.innerHTML += `</ul>`;
+
+/**Parte 3: Listas de Objetos enfocados en visualización */
+
+const li = document.createElement('li');
+
+let texto = 'hola';
+let texto2 = 'que hace';
+li.textContent(texto);
+li.textContent(texto2);
+
+const ul = document.querySelector('ul');
+ul.appendChild(li);
+
