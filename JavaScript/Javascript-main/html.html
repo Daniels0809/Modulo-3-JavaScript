@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <h1>aqui ira todos nuestros arrays</h1>
+
+    <div id="container">
+    </div>
+    <script>
+let array = [0, 1, 2, 3];
+let container = document.getElementById('container');
+
+container.innerHTML = '<ul>'; // ✅ propiedad correcta
+
+array.forEach(numero => {
+  container.innerHTML += `<li>${numero}</li>`; // ✅ cierre correcto
+});
+
+container.innerHTML += '</ul>';
+
+    </script>
+</body>
+</html>
